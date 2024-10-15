@@ -1,0 +1,238 @@
+:root {
+    cursor: default;
+}
+
+body {
+    color: #1c1c1c;
+    background-image: url("https://images.pexels.com/photos/19987632/pexels-photo-19987632.jpeg?cs=srgb&dl=pexels-marek-piwnicki-3907296-19987632.jpg&fm=jpg");
+    background-color: #1c1c1c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    font-family: Poppins, sans-serif;
+}
+
+html, body {
+    height: 99%;
+    overflow: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER PRINCIPAL*/
+
+.header {
+    color: #ededed;
+    text-align: center;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.75);
+}
+
+/*ESPAÇAMENTO DO h1 PARA h3*/
+.header h1, h3 {
+    margin-top: 0;
+    margin-bottom: .25rem;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*TEXTO INICIAL*/
+
+.container {
+    background-color: rgba(199, 199, 199, 0.65);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    max-width: 70rem;
+    min-width: 10rem;
+    font-size: 1.2rem;
+    border: solid 1rem rgba(255, 255, 255, 0);
+    backdrop-filter: blur(2px);
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .25);
+    border-radius: .55rem;
+}
+
+.container .info {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+/*HEADER DO TEXTO INICIAL*/
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ededed;
+    border-radius: .75rem;
+    margin-bottom: 1rem;
+}
+
+.infoviagem {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+/*IMAGENS*/
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.images img {
+    width: 17.5rem;
+    max-width: 295px;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    filter: brightness(.75)contrast(.75)saturate(0);
+}
+
+.images img:hover {
+    transition-duration: 300ms;
+    transform: scale(1.1);
+    border: solid .25rem rgba(255, 255, 255, .35);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    filter: brightness(1)saturate(.65);
+    z-index: 1;
+}
+
+hr {
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 6px;
+    width: 120vh;
+    max-width: 120vh;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 20px;
+}
+
+/*SEGUNDO MAIN-HEADER*/
+
+.mainheader {
+    color: #ededed;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: auto;
+    font-size: 1.65rem;
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.75);
+}
+
+
+/*SEGUNDO CONTAINER*/
+
+.second-container {
+    background-color: rgba(199, 199, 199, 0.65);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80vw;
+    max-width: 70rem;
+    min-width: 10rem;
+    font-size: 1.25rem;
+    border: solid 1rem rgba(255, 255, 255, 0);
+    backdrop-filter: blur(3px);
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .25);
+    border-radius: .55rem;
+}
+
+.info-viagem h1 {
+    color: #ededed;
+    font-size: 1.85rem;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.final {
+    color: #ededed;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: solid 5px rgba(0,0,0,0);
+    border-radius: 6px;
+}
+
+/*FOOTER*/
+
+.footer {
+    color: #ededed;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    font-size: 2.2vh;
+}
+
+/*AJUSTE PARA CELULAR*/
+
+@media (max-width: 600px) {
+    body {
+        background-size: 185vh;
+        background-attachment: scroll;
+        background-position: center top;
+    }
+    .header {
+        font-size: 1.3rem;
+    }
+    .container {
+        font-size: 1rem;
+    }
+    .header2 {
+        font-size: 1rem;
+    }
+    .infoviagem {
+        font-size: 1rem;
+    }
+    .second-container {
+        font-size: 1rem;
+    }
+    .mainheader {
+        font-size: 1.1rem;
+    }
+    hr {
+        max-width: 18vh;
+    }
+    .images {
+        gap: 20px;
+    }
+    .images img {
+        filter: brightness(1)saturate(.65);
+        filter: brightness(.85);
+    }
+}
